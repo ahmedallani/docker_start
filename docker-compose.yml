@@ -3,10 +3,12 @@ version: "3"
 services:
   client:
     build: .
-    container_name: client
+    image: start_now_image
+    container_name: start_now_container
     restart: always
     command: npm start
     volumes:
       - .:/client
+      - /client/node_modules
     ports:
       - 3000:3000
