@@ -3,8 +3,8 @@ version: "3"
 services:
   client:
     build: .
-    image: start_now_image
-    container_name: start_now_container
+    image: allania7med11/docker_start
+    container_name: docker_start_container
     restart: always
     command: npm start
     volumes:
